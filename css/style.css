@@ -1,0 +1,509 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+h3 {
+  font-family: Arvo, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    " iphone-6s iphone-6s iphone-6s iphone-6s iphone-6s iphone-6s how-to-use how-to-use how-to-use how-to-use how-to-use how-to-use "
+    "keyboard keyboard keyboard IMAC-RETINA IMAC-RETINA IMAC-RETINA IMAC-RETINA IMAC-RETINA IMAC-RETINA  iCloud iCloud iCloud"
+    "Games-ourpasion Games-ourpasion Games-ourpasion experiance experiance experiance experiance experiance experiance iCloud iCloud iCloud "
+    "twitter twitter twitter experiance2 experiance2 experiance2 television television television television television television";
+}
+
+.how-to-use {
+  grid-area: how-to-use;
+  /* background-color: blue; */
+}
+.iphone-6s {
+  grid-area: iphone-6s;
+  /* background-color: brown; */
+}
+.keyboard {
+  grid-area: keyboard;
+  background-color: rgb(110, 74, 74);
+}
+.IMAC-RETINA {
+  grid-area: IMAC-RETINA;
+  /* background-color: rgb(224, 176, 176); */
+}
+.Games-ourpasion {
+  grid-area: Games-ourpasion;
+  background-color: rgb(228, 221, 221);
+}
+.experiance {
+  grid-area: experiance;
+  background-color: rgb(14, 13, 13);
+}
+
+.iCloud {
+  grid-area: iCloud;
+  background-color: rgb(20, 133, 6);
+}
+.twitter {
+  grid-area: twitter;
+  background-color: rgb(14, 13, 13);
+}
+.experiance2 {
+  grid-area: experiance2;
+  /* background-color: rgba(194, 4, 4, 0.288); */
+}
+
+.television {
+  grid-area: television;
+  background-color: rgb(39, 2, 61);
+}
+
+/* /////////////////iphone////// */
+.iphone-6s {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 60px;
+  padding: 2% 4% 0;
+  letter-spacing: 2px;
+}
+.iphone-content {
+  margin-top: 50px;
+}
+
+.iphone-content .iphone {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: rgba(73, 73, 73, 0.753);
+  text-transform: uppercase;
+  margin: 30px 30px;
+  line-height: 20px;
+}
+.iphone-content p {
+  font-family: Arvo, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 30px 30px;
+}
+.iphone-content .iphone-p {
+  color: #9fa3a7;
+  margin: 30px 30px;
+  font-size: 1rem;
+}
+.iphone-img {
+  text-align: center;
+  margin: 0 80px;
+}
+.iphone-img img {
+  width: 100%;
+  display: block;
+}
+
+/* //////////////how to use///////////////// */
+
+.how-to-use {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f8f9;
+}
+.use-inner {
+  padding: 4%;
+  width: 60%;
+}
+
+.how-to-use p {
+  font-family: "Arvo", serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: black;
+  line-height: 60px;
+  letter-spacing: 2px;
+}
+.how-to-use div {
+  font-size: 0.9rem;
+  font-weight: bolder;
+  color: rgb(19, 18, 18);
+  letter-spacing: 2px;
+
+  font-family: "Montserrat", sans-serif;
+
+  color: rgba(73, 73, 73, 0.753);
+  text-transform: uppercase;
+  margin: 30px 30px;
+}
+.how-to-use a {
+  text-transform: capitalize;
+}
+
+/* ////////////keyboard-content///////////////////////// */
+.keyboard,
+.Games-ourpasion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f05638;
+}
+
+.keyboard-content,
+.Games-content {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.keyboard-img img,
+.Games-img img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.keyboard-content h3,
+.Games-content h3 {
+  font-size: 1.5rem;
+  color: #f7f8f9;
+  font-weight: 800;
+  line-height: 40px;
+}
+.keyboard-content a,
+.Games-content a ,.IMAC-RETINA-content a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffc80a;
+  letter-spacing: 3px;
+  /* padding: 20px 0; */
+  font-size: 12px;
+  font-weight: bold;
+}
+/* //////////games////////////////////// */
+
+.Games-ourpasion {
+  text-align: center;
+  background-color: #f7f8f9;
+}
+.Games-content h3 {
+  color: rgb(32, 32, 32);
+  /* letter-spacing: 20px; */
+}
+.Games-content a {
+  color: #27b9c2;
+}
+.Games-img img {
+  width: 70%;
+  padding-right: 50px;
+}
+
+/* /////////twitter//////////// */
+.twitter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #38d5f4;
+  color: #f7f8f9;
+}
+.twitter .twitter-content img {
+  width: 40px;
+  display: block;
+  margin: 20px 0;
+}
+
+.twitter .twitter-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin: 50px; */
+  width: 250px;
+  height: 250px;
+  /* padding-right: 34px;
+  padding-left: 34px; */
+  padding: 0 34px;
+
+  /* border: 2px solid; */
+
+  border-radius: 50%;
+  background-color: #35cfed;
+
+  text-align: center;
+}
+.twitter .twitter-content h3 {
+  line-height: 30px;
+  letter-spacing: 3px;
+  font-weight: 500px;
+}
+
+/* /////////////experiance////////////////// */
+
+.experiance2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* row-gap: 10px; */
+  text-align: center;
+}
+.experiance2 .ex-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7bc424;
+  text-align: center;
+  width: 100px;
+  height: 20px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  /* line-height: 5px; */
+  margin: 40px 0 0;
+}
+.experiance2 .experiance-content2 {
+  letter-spacing: 2px;
+  line-height: 30px;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Arvo", sans-serif;
+  margin: 10px 0 20px;
+}
+
+/* ////////////television/////////// */
+
+.television {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  padding: 0 30px;
+  overflow: hidden;
+  background-color: #2c2c2c;
+}
+.television img {
+  display: block;
+  width: 290px;
+  /* margin: 0  80px; */
+  position: relative;
+  left: -13%;
+}
+.television h3 {
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "arvo", sans-serif;
+  font-weight: 300px;
+  font-size: 20px;
+}
+
+/* /////////IMAC-RETINA////////////// */
+
+.IMAC-RETINA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  overflow: hidden;
+}
+.IMAC-RETINA .IMAC-RETINA-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 20px;
+  text-align: start;
+  width: 50%;
+  margin: 0px 80px;
+}
+.IMAC-RETINA .IMAC-RETINA-img img {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  left: -85%;
+  width: 250%;
+  margin-bottom: 0;
+  
+}
+
+.IMAC-RETINA .IMAC-RETINA-img > div {
+  font-family: "Montserrat", sans-serif;
+  color: #9fa3a7;
+  font-size: 15px;
+  line-height: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.IMAC-RETINA .IMAC-RETINA-img p {
+  font-family: "Arvo", sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.IMAC-RETINA-content {
+    text-align: start;
+    width: 100%;
+    margin-right: 60px;
+}
+.IMAC-RETINA-content p{
+    color: #9fa3a7;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    /* background-color: #ffc80a; */
+    margin-top: -50px ;
+    margin-bottom: 70px;
+    
+}
+.IMAC-RETINA-content a{
+    color: #27b9c2;
+    /* text-decoration:underline ; */
+}
+
+
+
+/* ///////////experiance//////////// */
+.experiance{
+    text-align: center;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #93b6b7;
+  background-image: url(../images/images/ux.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.experiance .experiance-div{
+   margin: 40px 0;
+   position: relative;
+   left: -38%;
+   color: #f7f8f9;
+   background-color: #fa684f;
+   padding:2px 5px ;
+   border-radius: 3px;
+   /* letter-spacing: 2px; */
+   /* line-height: 2px; */
+   font-size: 12px;
+   font-family: 'Open Sans', sans-serif;
+
+}
+
+.experiance-content img{
+    display: block;
+    width: 100%;
+    position: relative;
+    transform: translatex(-10%);
+}
+.experiance-content p{
+    letter-spacing: 2px;
+  line-height: 30px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Arvo", sans-serif;
+  margin: 20px 0 20px;
+  color: #fff;
+
+}
+
+/* /////////////floppy/////////////// */
+.iCloud{
+
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #8f76bc;
+  overflow: hidden;
+
+}
+.iCloud .floppy-circle{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 420px;
+  
+  
+  overflow: hidden;
+
+  border-radius: 50%;
+  background-color: #8166b0;
+
+  text-align: center;
+}
+.iCloud .floppy-circle img{
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle;
+
+}
+.iCloud .floppy-circle .popular{
+    background-color: hsla(0, 0%, 100%, .08);
+    padding: 0 4px;
+    margin: 30px 0;
+    border-radius: 3px;
+    color: #fff;
+}
+.iCloud .floppy-circle i{
+    color: rgba(255, 255, 0, 0.856);
+    margin: 1px 3px;
+}
+.floppy-meet{
+    margin-top: -10px;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: -5px;
+}
+.icloud-content{
+    text-align: center;
+    margin: 20px 60px;
+    color: #fff;
+
+}
+.icloud-content h3{
+   
+    font-size: 50px;
+}
+.icloud-content p{
+    line-height: 20px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+.icloud-content div {
+    width: 160px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffc80a;
+    border-radius: 30px;
+    text-align: center;
+    transform: translateX(30px);
+    margin: 20px ;
+
+ 
+}
+.icloud-content div  a{
+    text-decoration: none;
+ display: block;
+ font-size: 18px;
+    /* margin: auto; */
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+       
+
+}
+
+
+
